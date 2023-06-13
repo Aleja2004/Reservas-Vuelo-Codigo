@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagenes/aerolinea.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container-page {
+    height: 70vh;
+    width: 30vw;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    transition: all 0.8s;
+    background-color: rgba(76, 77, 78, 0.1);
+    border: 1px solid white;
+    backdrop-filter: blur(10px);
+    position: relative;
+}
+
+.container-page::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    box-shadow: 0 0 15px #fff;
+}
+
+.login-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+form {
+    width: 80%;
+    margin: auto;
+}
+
+.input-line-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.name-input {
+    font-size: 12px;
+}
+
+.input-line {
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #CBCBCB;
+    outline: none;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.date-input {
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #CBCBCB;
+    outline: none;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.button-login {
+    width: 100%;
+    height: 45px;
+    border-radius: 55px;
+    background: rgba(45, 43, 43, 0.137);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.button-second {
+    width: 100%;
+    height: 45px;
+    border-radius: 55px;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 2px solid white;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-login:hover {
+    box-shadow: 0px 0px 8px #5e5c5ca4;
+}
+
+.button-second:hover {
+    opacity: 1;
+}
+/* Agrega el siguiente estilo al botón de Registrar */
+input[name="Registrar"] {
+    background-color: #e2e2e2;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+    background-image: linear-gradient(to right, #1d31b9, #549ee8, #013341);
+    background-size: 200% auto;
+    background-position: right center;
+  }
+  
+  /* Agrega el estilo cuando el mouse pasa por encima del botón */
+  input[name="Registrar"]:hover {
+    background-position: left center;
+  }
+  
+  /* Agrega el estilo cuando el botón se presiona */
+  input[name="Registrar"]:active {
+    transform: translateY(3px);
+  }
+  /* Estilos para los botones */
+button {
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+  }
+  
+  button i {
+    margin-right: 5px;
+  }
+  
+  /* Estilos adicionales para los botones específicos */
+  button[name="submit"] {
+    color: #ffffff;
+  }
+  
+  button[name="delete"] {
+    color: #ffffff;
+  }
+  
+  button[name="update"] {
+    color: #ffffff;
+  }
+  
+  button[name="modify"] {
+    color: #ffffff;
+  }
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #7d9fc0;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #77a1cd;
+  }
+  
+  .back-button:active {
+    transform: translateX(10px);
+  }
+  .back-button {
+    background-color: skyblue; /* Color de fondo azul cielo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .back-button:hover {
+    transform: translateX(5px); /* Desplazamiento hacia la derecha al hacer hover */
+  }
+  
+  
+  
+  
+  

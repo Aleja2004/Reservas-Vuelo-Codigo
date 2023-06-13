@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-image: url(../imagenes/nombre.jpg);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+.movie-container {
+  margin: 20px 0;
+}
+
+.movie-container select {
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 5px 15px 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.container {
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+
+.seat {
+  background-color: #477ed0;
+  height: 26px;
+  width: 32px;
+  margin: 3px;
+  font-size: 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.seat.selected {
+  background-color: rgb(88, 92, 88);
+}
+
+.seat.sold {
+  background-color: #fff;
+}
+
+.seat:nth-of-type(2) {
+  margin-right: 18px;
+}
+
+.seat:nth-last-of-type(2) {
+  margin-left: 18px;
+}
+
+.seat:not(.sold):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.showcase .seat:not(.sold):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+.showcase li small {
+  margin-left: 2px;
+}
+
+.row {
+  display: flex;
+}
+
+.screen {
+  background-color: #fff;
+  height: 120px;
+  width: 100%;
+  margin: 15px 0;
+  transform: rotateX(-48deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+p.text{
+    margin: 5px 0;
+}
+
+p.text span{
+    color: rgb(107, 231, 240);
+}
+.back-button:hover {
+    background-color: #77a1cd;
+  }
+  
+  .back-button:active {
+    transform: translateX(10px);
+  }
+  .back-button {
+    background-color: rgb(54, 135, 189); /* Color de fondo azul cielo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .back-button:hover {
+    transform: translateX(5px); /* Desplazamiento hacia la derecha al hacer hover */
+  }
+  .form-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  button {
+    width: 120px;
+    height: 40px;
+    margin: 0 5px;
+    font-size: 18px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  button[name="submit"] {
+    color: #65c7f7;
+  }
+  
+  button[name="submit"]:hover {
+    background-color: rgba(101, 199, 247, 0.1);
+  }
+  
+  button[name="delete"] {
+    color: #ff9f43;
+  }
+  
+  button[name="delete"]:hover {
+    background-color: rgba(255, 159, 67, 0.1);
+  }
+  
+  button[name="update"] {
+    color: #67d7b8;
+  }
+  
+  button[name="update"]:hover {
+    background-color: rgba(103, 215, 184, 0.1);
+  }
+  
+  button[name="modify"] {
+    color: #b984dc;
+  }
+  
+  button[name="modify"]:hover {
+    background-color: rgba(185, 132, 220, 0.1);
+  }
+  /* Estilos adicionales para los botones específicos */
+  button[name="submit"] {
+    color: #ffffff;
+  }
+  
+  button[name="delete"] {
+    color: #ffffff;
+  }
+  
+  button[name="update"] {
+    color: #ffffff;
+  }
+  
+  button[name="modify"] {
+    color: #ffffff;
+  }
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #7d9fc0;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #77a1cd;
+  }
+  
+  .back-button:active {
+    transform: translateX(10px);
+  }
+  .back-button {
+    background-color: skyblue; /* Color de fondo azul cielo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .back-button:hover {
+    transform: translateX(5px); /* Desplazamiento hacia la derecha al hacer hover */
+  }
+    /* Estilos para los botones */
+button {
+  background-color: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+}
+
+button i {
+  margin-right: 5px;
+}
+  

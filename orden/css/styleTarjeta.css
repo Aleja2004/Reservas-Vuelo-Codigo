@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../imagenes/avion45.jpg);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.ticket {
+    width: 80%;
+    max-width: 500px;
+    background-color: #f9f9f9;
+    border: none; /* Eliminamos el borde existente */
+    padding: 20px;
+    border-radius: 30px; /* Agregamos bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Agregamos el borde sombreado */
+}
+
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.flight-details {
+    margin-bottom: 10px;
+}
+
+.passenger-details {
+    margin-bottom: 10px;
+}
+
+.qr-code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.qr-code img {
+    max-width: 200px;
+    height: auto;
+}
+
+
+.contact-details {
+    margin-bottom: 10px;
+}
+
+.cancellation-policy {
+    margin-bottom: 10px;
+}
+
+.security-features {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.download-options button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #a2d1f2;
+    border: 1px solid #3b8d9b;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.download-options button:hover {
+    background-color: #6a8fca;
+    transform: translateY(-3px);
+}
+
+.download-options button:focus {
+    outline: none;
+}
+
+.download-options button:active {
+    background-color: #ccc;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+

@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito';
+}
+
+body {
+    background-image: url(../imagenes/aerolinea.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    max-width: 1000px;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 30px;
+    padding: 50px;
+    color: #000; /* Cambio del color de texto a negro */
+}
+
+.contenedor header {
+    overflow: hidden;
+}
+
+.contenedor header h1 {
+    float: left;
+}
+
+.contenedor header nav {
+    float: left;
+}
+
+.contenedor header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor header nav ul li {
+    margin: 0 30px;
+}
+
+.contenedor header nav ul li a {
+    text-decoration: none;
+    color: #000; /* Cambio del color de texto a negro */
+    line-height: 33px;
+    font-size: 14px;
+    padding: 5px 10px;
+    transition: .5s;
+    border-radius: 20px;
+}
+
+.contenedor header nav ul li a:hover {
+    background-color: #000;
+    color: #000; /* Cambio del color de texto a negro */
+}
+
+.contenedor header .busqueda {
+    float: right;
+}
+
+.contenedor header .busqueda input {
+    display: inline-block;
+    width: 200px;
+    border: none;
+    background-color: rgba(0, 0, 0, .4);
+    padding: 7px;
+    outline: none;
+    color: #000; /* Cambio del color de texto a negro */
+    border-right: 3px;
+    transition: .5s;
+    opacity: 0;
+}
+
+.contenedor header .busqueda:hover input {
+    opacity: 1;
+}
+
+.contenedor header .busqueda i {
+    cursor: pointer;
+}
+
+.contenedor .contenido {
+    display: flex;
+    position: relative;
+}
+
+.contenido .linea-decorativa {
+    position: absolute;
+    height: 250px;
+    border-left: 2px solid #000; /* Cambio del color de borde a negro */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.contenido .linea-decorativa .circulo {
+    width: 15px;
+    height: 15px;
+    background-color: #000; /* Cambio del color de fondo a negro */
+    border-radius: 50%;
+    margin-left: -9px;
+}
+
+.contenedor .contenido .left {
+    width: 50%;
+    margin-top: 30px;
+    padding-left: 50px;
+}
+
+.contenedor .contenido .left h2 {
+    padding-top: 60px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #000; /* Cambio del color de texto a negro */
+}
+
+.contenedor .contenido .left p {
+    margin-bottom: 60px;
+    font-size: 14px;
+    color: #000; /* Cambio del color de texto a negro */
+}
+
+.contenedor .contenido .left button {
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    border: 2px solid #000; /* Cambio del color de borde a negro */
+    color: #000; /* Cambio del color de texto a negro */
+    padding: 5px 20px;
+    border-radius: 30px;
+    margin-bottom: 60px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.contenedor .contenido .left button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.contenedor .contenido .left .redes {
+    font-size: 12px;
+    width: fit-content;
+    padding-bottom: 7px;
+    border-bottom: 2px solid #000; /* Cambio del color de borde a negro */
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor .contenido .left .redes a {
+    text-decoration: none;
+    color: #000; /* Cambio del color de texto a negro */
+}
+
+.contenedor .contenido .right {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.contenedor .contenido .right .popular {
+    border-bottom: 2px solid #000; /* Cambio del color de borde a negro */
+    width: 100px;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+.contenedor .contenido .right .contenedor-fotos {
+    display: flex;
+    justify-content: end;
+}
+
+.contenedor .contenido .right .contenedor-fotos img {
+    width: 30%;
+    margin: 0 15px;
+    border-radius: 10px;
+}
+
+/* Estilos para la barra superior */
+.barra-superior {
+    background-color: #f5f5f5;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo {
+    margin: 0;
+}
+
+.busqueda {
+    display: flex;
+    align-items: center;
+}
+
+.busqueda input {
+    border: none;
+    background-color: #f5f5f5;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Estilos para el formulario */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #000; /* Cambio del color de borde a negro */
+    margin-bottom: 10px;
+    color: #000; /* Cambio del color de texto a negro */
+}
+
+
+
+form button:hover {
+    background-color: #111; /* Cambio del color de fondo al hacer hover */
+}
+
+/* Otros estilos */
+.contenido {
+    display: flex;
+}
+
+.left {
+    flex: 1;
+    padding: 20px;
+}
+
+.right {
+    flex: 1;
+    padding: 20px;
+}
+
+.popular {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contenedor-fotos {
+    width: 1000px;
+    height: 30;
+    display: flex;
+    justify-content: space-between;
+    color: #000; /* Cambio del color de texto a negro */
+}
+
+
+figure {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+figcaption {
+    margin-top: 5px;
+}
+.contenedor {
+    position: relative;
+    max-width: 1000px;
+  background-color: #fff; /* Cambia el color a blanco */
+  border-radius: 30px;
+  padding: 50px;
+  color: #fff;
+}
+
+.barra-superior {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #6c95e1;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.titulo {
+    margin: 0;
+}
+
+.busqueda {
+    display: flex;
+    align-items: center;
+}
+
+.busqueda input {
+    border: none;
+    background-color: #f5f5f5;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.contenido {
+    position: relative;
+    padding-top: 70px;
+}
+.contenedor .contenido .right .nombre {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000; /* Cambio del color de texto a negro */
+}
+
+.contenedor .contenido .right .popular {
+    border-bottom: 2px solid #000; /* Cambio del color de borde a negro */
+    width: 100px;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    color: #000; /* Cambio del color de texto a negro */
+}
+
+.contenedor .contenido .right .tiempo {
+    font-size: 14px;
+    color: #000; /* Cambio del color de texto a negro */
+}
+
+/* ...otros estilos... */
+
+form button#buscar {
+    background-color: #c26363; /* Color rojo */
+}
+
+form button#eliminar {
+    background-color: #aadbaa; /* Color verde */
+}
+
+form button#actualizar {
+    background-color: #5858ca; /* Color azul */
+}
+
+form button#modificar {
+    background-color: #dada9f; /* Color amarillo */
+}
+
+form button:hover {
+    background-color: #7d88dc;
+}
